@@ -7,9 +7,11 @@
   <h3>Welcome to guess that Pokemon!</h3>
   <form id="pokeGuess">
     <p>The rules are simple. You will have 6 guesses to guess the right Pokemon name.</p>
+    <label for="get-pokemon">First, choose a number from 0 to 897:</label>
+    <input for="get-pokemon" type="number" pattern="[0-9]{1,3}" required>
     <label for="guessLetter">Enter a letter:</label>
-      <input id="guessLetter" type="text" pattern="[a-z]+" minlength="1" maxlength="1" required>
-      <button type="submit">Submit</button>
+    <input id="guessLetter" type="text" pattern="[a-z]{1,1}">
+    <button type="submit">Submit</button>
   </form>
   <div id="user-results">
     <p>Your wrong guesses so far: <span class="wrong-guesses"></span></p>
@@ -18,3 +20,4 @@
   </div>
 </body>
 </html>
+
