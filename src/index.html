@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Guess the Dino!</title>
+  <title>Guess that Pokemon!</title>
 </head>
 <body>
-  <div>Hello world!</div>
-  <img src="" alt="">
+  <h3>Welcome to guess that Pokemon!</h3>
+  <form id="pokeGuess">
+    <p>The rules are simple. You will have 6 guesses to guess the right Pokemon name.</p>
+    <label for="guessLetter">Enter a letter:</label>
+      <input id="guessLetter" type="text" pattern="[a-z]+" minlength="1" maxlength="1" required>
+      <button type="submit">Submit</button>
+  </form>
+  <div id="user-results">
+    <p>Your wrong guesses so far: <span class="wrong-guesses"></span></p>
+    <p>Your number of wrong answers so far: <span class="wrong-answers"></span></p>
+    <p>The word:<span class="right-answer"></span></p> 
+  </div>
 </body>
 </html>

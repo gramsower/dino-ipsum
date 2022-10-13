@@ -23,5 +23,4 @@ function getPokemon(name) {
   });
 }
 
-
 // U I Logic
